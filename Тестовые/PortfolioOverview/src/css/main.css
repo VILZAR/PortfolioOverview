@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main__header {
+  width: 100%;
+  height: 10vw;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__header_button {
+  background-color: rgb(241, 79, 79);
+  color: white;
+}
+.main__titles {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  margin: auto;
+}
+.main__titles_item {
+  width: 16.6666666667%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.cryptos__form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 1px 1px 6px gray;
+  padding: 15px;
+  border-radius: 3%;
+  background-color: white;
+}
+.cryptos__form_input {
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+  outline: 0;
+  padding: 5px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.cryptos__addform_button {
+  margin-bottom: 5px;
+  background-color: rgb(241, 79, 79);
+  color: white;
+}
+.cryptos__addform_title {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 10px auto 0 auto;
+}
+.cryptos__addform_input {
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 10px auto;
+  outline: 0;
+  padding: 5px 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.currency__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.currency__list_item {
+  display: flex;
+  list-style: none;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.currency__list_item_cells {
+  width: 16.6666666667%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.currency__list_item:hover {
+  background-color: rgb(236, 236, 236);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.loading {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,152 @@
+$primary-color: rgb(241, 79, 79);
+$background-color: white;
+$border-color: black;
+$hover-background-color: rgb(236, 236, 236);
+$box-shadow: 1px 1px 6px gray;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main {
+  &__header {
+    width: 100%;
+    height: 10vw;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_button {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  &__titles {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+
+    &_item {
+      width: calc(100% / 6);
+      display: flex;
+      justify-content: center;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.cryptos {
+  &__form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: $box-shadow;
+    padding: 15px;
+    border-radius: 3%;
+    background-color: $background-color;
+
+    &_input {
+      border: 0;
+      border-bottom: 1px solid $border-color;
+      width: 90%;
+      margin: 0 auto;
+      outline: 0;
+      padding: 5px 0;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+  }
+  &__addform {
+    &_button {
+      margin-bottom: 5px;
+      background-color: $primary-color;
+      color: white;
+    }
+
+    &_title {
+      width: max-content;
+      margin: 10px auto 0 auto;
+    }
+
+    &_input {
+      border: 0;
+      border-bottom: 1px solid $border-color;
+      width: 90%;
+      margin: 10px auto;
+      outline: 0;
+      padding: 5px 0;
+      font-size: 1em;
+      font-weight: 400;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.currency {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    &_item {
+      display: flex;
+      list-style: none;
+      height: 50px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+
+      &_cells {
+        width: calc(100% / 6);
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em;
+      }
+
+      &:hover {
+        background-color: $hover-background-color;
+        border-radius: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
